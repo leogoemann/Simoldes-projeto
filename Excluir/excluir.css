@@ -86,48 +86,6 @@ header.major > :last-child {
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
-
-
-
-/* Table */
-table {
-  margin: 0 0 2em 0;
-  width: 100%; 
-}
-
-table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(230, 235, 237, 0.25); 
-}
-
-table td {
-  padding: 0.75em 0.75em; 
-}
-
-table th {
-  color: #3d4449;
-  font-size: 0.9em;
-  font-weight: 600;
-  padding: 0 0.75em 0.75em 0.75em;
-  text-align: left; 
-}
-
-table thead {
-  border-bottom: solid 2px rgba(210, 215, 217, 0.75); 
-}
-
-table.alt tbody tr td {
-  border: solid 1px rgba(210, 215, 217, 0.75);
-  border-left-width: 0;
-  border-top-width: 0; 
-}
-
-table.alt tbody tr td:first-child {
-  border-left-width: 1px; 
-}
-
-table.alt tbody tr:first-child td {
-  border-top-width: 1px; 
-}
  
 
 /* Wrapper */
@@ -244,4 +202,64 @@ table.alt tbody tr:first-child td {
   border-top: 0;
   margin-top: 0;
   padding-top: 0; 
+}
+
+/* form excluir-peça*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1c5846;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.title-2{
+  font-size: 1.2em;
+  margin-top: 14px;
 }

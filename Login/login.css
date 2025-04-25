@@ -45,7 +45,7 @@ body{
 
 .box-imagem img {
     width: 30em;
-    animation: slideLeft 1.5s ease-out; 
+    animation: slideLeft 1.9s ease-out; 
 }
 
 @keyframes slideLeft {
