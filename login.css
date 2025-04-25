@@ -37,25 +37,25 @@ body{
 
 .box-imagem {
     width: 58%;
-    display: flex; /* facilita o alinhamento de elementos internos. */
-    justify-content: center; /* Alinha o conteúdo horizontalmente no centro da .box-imagem. */
-    align-items: center; /* Centraliza vertical e horizontalmente. */
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
     background-color: rgb(255, 255, 255);
 }
 
 .box-imagem img {
     width: 30em;
-    animation: slideLeft 1.5s ease-out; /* Animação agora aplicada apenas à imagem */
+    animation: slideLeft 1.5s ease-out; 
 }
 
 @keyframes slideLeft {
     from {
         opacity: 0;
-        transform: translateX(-70px); /* Começa fora da tela à esquerda */
+        transform: translateX(-70px); 
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* Termina no lugar original */
+        transform: translateX(0); 
     }
 }
 
