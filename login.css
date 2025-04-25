@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+x@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
 *{
     margin: 0;
@@ -32,17 +32,33 @@ body{
     justify-content: center; /*Alinha o conteúdo horizontalmente no centro da .box-imagem.*/
     align-items: center; /*Junto com o display: flex, essas duas regras centralizam qualquer coisa dentro da div, tanto na horizontal quanto na vertical.*/
     background-color: rgb(255, 255, 255);
-    animation: slideLeft 1.5s ease-out; /* AQUI vai a animação */
+
+}
+
+.box-imagem {
+    width: 58%;
+    display: flex; /* facilita o alinhamento de elementos internos. */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro da .box-imagem. */
+    align-items: center; /* Centraliza vertical e horizontalmente. */
+    background-color: rgb(255, 255, 255);
+}
+
+.box-imagem img {
+    width: 30em;
+    animation: slideLeft 1.5s ease-out; /* Animação agora aplicada apenas à imagem */
 }
 
 @keyframes slideLeft {
-    from { opacity: 0; transform: translateX(-500px); } /*totalmente transparente.*/
-    to { opacity: 1; transform: translateX(0); } /*move o elemento 50 pixels para a esquerda (fora da tela, visualmente).*/
+    from {
+        opacity: 0;
+        transform: translateX(-70px); /* Começa fora da tela à esquerda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Termina no lugar original */
+    }
 }
 
-.box-imagem img{
-    width: 30em;
-}
 
 /* formulario, inputs, label e icon */
 
